@@ -1,44 +1,50 @@
 $(document).ready(function() {
 
 
-//declare winscore
-    
-var targetnumber = Math.floor(Math.random() * 120) + 9 ;
+    //declare winscore
 
-$("#winscore").text(targetnumber);
+    var targetnumber = Math.floor(Math.random() * 120) + 9 ;
 
-var counter = 0;
+    $("#winscore").text(targetnumber);
 
-var numberOption = Math.floor(Math.random() * 12) + 1;
+    var counter = 0;
 
-//create value for each Crystal
-    
-for (var i = 0; i< numberOption.length; i++)
-    
-    {
-        var imageCrystalBlue = $("<img>");
-        imageCrystal.addClass("crystalimage");
-        $('#theDiv').prepend('<img id="theImg" src="theImg.png" />')            imageCrystal.attr("data-crystalvalue"), numberOption[i];
-        $("#button-blue").append(imageCrystal;)
-        
-        var imageCrystalYellow = $("<img>");
-        imageCrystal.addClass("crystalimage");
-        imageCrystal.attr("scr", "image/yellowcrystal.png");
-        imageCrystal.attr("data-crystalvalue"), numberOption[i];
-        $("#button-blue").append(imageCrystal;)
-        
-        var imageCrystalRed = $("<img>");
-        imageCrystal.addClass("crystalimage");
-        imageCrystal.attr("scr", "image/redcrystal.png");
-        imageCrystal.attr("data-crystalvalue"), numberOption[i];
-        $("#button-red").append(imageCrystal;)
-                
-        var imageCrystalGreen = $("<img>");
-        imageCrystal.addClass("crystalimage");
-        imageCrystal.attr("scr", "image/greencrystal.png");
-        imageCrystal.attr("data-crystalvalue"), numberOption[i];
-        $("#button-green").append(imageCrystal;)
+    var numberOption = Math.floor(Math.random() * 12) + 1;
+
+//    create value for each Crystal
+
+    for (var i = 0; i< numberOption.length; i++){
+            var imageCrystalBlue = $("<img>");
+            imageCrystalBlue.addClass("crystalimage");
+            imageCrystalBlue.attr("scr", "image/bluecrystal.png");
+            imageCrystalBlue.attr("data-crystalvalue"), numberOption[i];
+            $("#button-blue").append(imageCrystalBlue);
+
+            var imageCrystalYellow = $("<img>");
+            imageCrystalYellow.addClass("crystalimage");
+            imageCrystalYellow.attr("scr", "image/yellowcrystal.png");
+            imageCrystalYellow.attr("data-crystalvalue"), numberOption[i];
+            $("#button-blue").append(imageCrystalYellow);
+
+            console.log(imageCrystalYellow)
+
+            var imageCrystalRed = $("<img>");
+            imageCrystalRed.addClass("crystalimage");
+            imageCrystalRed.attr("scr", "image/redcrystal.png");
+            imageCrystalRed.attr("data-crystalvalue"), numberOption[i];
+            $("#button-red").append(imageCrystalRed);
+
+            var imageCrystalGreen = $("<img>");
+            imageCrystalGreen.addClass("crystalimage");
+            imageCrystalGreen.attr("scr", "image/greencrystal.png");
+            imageCrystalGreen.attr("data-crystalvalue"), numberOption[i];
+            $("#button-green").append(imageCrystalGreen);
     }
+    
+  /* $(".crystal-image").on("click", function() {
+      
+   }*/
+
     
   
     
