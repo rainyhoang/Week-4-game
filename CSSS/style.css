@@ -1,21 +1,137 @@
+#para1
+{
+	padding: 20px;
+}
+
+.header1
+
+{
+	text-align: center;
+}
+
 #row1
 {
-    background-color: aqua;
+    background-color: lightblue;
+	border-radius: 50px;
 }
 
 #row2
 
 {
+	margin-top: 10px;
     background-color: deepskyblue;
+	border-radius: 50px;
 }
+
+#row3
+{
+	margin-top: 10px;
+}
+
+#lastrow
+
+{
+	background-color: cornflowerblue;
+}
+
+
+#yourResult
+
+{
+	background-color: darkslategrey;
+	color: floralwhite;
+	font-weight: bold;
+}
+
 
 #col1
 
 {
     background-color: coral;
+	border-radius: 50px;
+	padding: 20px;
+	text-align: center;
+}
+
+#winscore
+{
+	font-size: 50px;
+
 }
 
 #col2
 {
     background-color: cornflowerblue;
+	border-radius: 50px;
+	padding: 20px;
+	margin-left: 20px;
 }
+
+.crystal-image
+
+{
+    width: 200px;
+    height: 200px;
+}
+
+#pwin
+
+{
+	font-weight: bold;
+	
+}
+
+#plose
+{
+	font-weight: bold;
+}
+
+#result
+{
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+}
+
+#col5
+{
+	text-align: center;
+	font-size: 40px;
+	color: red;
+	font-weight: bold;
+}
+
+#col6
+{
+	text-align: center;
+	font-size: 40px;
+	color: red;
+	font-weight: bold;
+	
+
+}
+
+#win
+
+{
+	color: red;
+	font: 25px;
+	
+}
+
+#lost
+
+{
+	color: red;
+	font: 25px;
+
+}
+
+#final
+
+{
+	margin-top: 10px;
+}
+
+
+

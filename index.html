@@ -23,73 +23,101 @@
 <!--    Link to Jquery-->
 <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 
-    
 
 
 <div class="container">
 <!--    row 1 -->
     <div class="row" id="row1">
-        <div class="col-6">
-            <h1 class="header1">Crysal Collector</h1>
-            <div id="win1"> </div>
-            <div id="lost1"></div>
-            
+        <div class="col-12">
+            <h1 class="header1">Crysal Collector</h1>  
         </div>
     </div>
     
+
+	<div class="row5">
+		<div class col-sm-6 id="col5">
+			<div id="win1"> </div>
+		</div>
+		
+		<div class col-sm-6 id="col6">
+			 <div id="lost1"></div>
+		</div>
+	
+	</div>
 <!--    row 2-->
     
     <div class="row" id="row2">
         <div>
-            <p id="para1">jhfkajdhfkjdhfkjshdfkjhdsfkjshdkfjshdjskfsd</p>
+            <p id="para1">You will be given a random number at the start of the game.
+
+There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+				<br>
+	
+
+You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+				<br>
+
+The value of each crystal is hidden from you until you click on it.
+
+Each time when the game starts, the game will change the values of each crystal.</p>
 
         </div>
     
     </div>
     
 <!--    Row 3-->
-    <div class="row">
+    <div class="row" id="row3">
         <div class="col-4" id="col1">
             <div id="winscore"></div>
         </div>
 
         <div class="col-2" id="col2">
-            <p>win: <span id = "wins"></span></p>
-            <p>lose: <span id = "lost"></span></p>
+            <p id="pwin">win: <span id = "wins"></span></p>
+            <p id="plose">lose: <span id = "lost"></span></p>
         </div>
     
     </div>
     
 <!--Row Button-->
     <div class="row">
-        <div class="col-8">
-            
+        <div class="col-sm-3">
             <div id="button-red"></div>
+		</div>
+		
+		<div class="col-sm-3">
             <div id="button-blue"></div>
+		</div>
+		
+		<div class="col-sm-3">
             <div id="button-yellow"></div>
+		</div>
+		
+		<div class="col-sm-3">
             <div id="button-green"></div>
+		</div>
 
 
 
         
-        </div>
+       
         
     
     </div>
     
-    <div class="row">
-        <div class="col 4">
-            <p>Your Result is</p>
+    <div class="row" id="final">
+        <div class="col-4" id="row4">
+            <p id="yourResult">Your Result is</p>
         </div>
         
     </div>
 <!--    Row result-->
-    <div class="row">
-        <div class="col 4">
+   
+        <div class="col-6" id="lastrow">
             <div id="result"></div>
-        </div>
+		</div>
+       
     
-    </div>
+   
     
     
     

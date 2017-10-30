@@ -22,6 +22,8 @@ $(document).ready(function() {
         return numberRandom;
         console.log(numberRandom)
     }
+	
+	
     
     numberOption()
     
@@ -43,8 +45,8 @@ $(document).ready(function() {
             var imageCrystalYellow = $("<img>");
             imageCrystalYellow.addClass("crystal-image");
             imageCrystalYellow.attr("src", "image/yellowcrystal.png");
-            imageCrystalYellow.attr("data-crystalvalue", (Math.floor(Math.random() * 12) + 1));
-            $("#button-yellow").appendTo(imageCrystalYellow);
+            imageCrystalYellow.attr("data-crystalvalue", (Math.floor(Math.random() * 12) +1));
+            $("#button-yellow").append(imageCrystalYellow);
     
 
 
@@ -63,7 +65,7 @@ $(document).ready(function() {
         
         
   
-    
+  
 // aDD IN ON-CLICK FUNCTION
     
     $(".crystal-image").on("click", function() {
@@ -87,7 +89,7 @@ $(document).ready(function() {
             }
         
             else if (counter >= targetnumber){
-                $("#lost1").text("You Lost");
+                $("#win1").text("You Lost");
                 reset();
                 lose++;
                 $("#lost").text(lose);
@@ -101,9 +103,10 @@ $(document).ready(function() {
             
             function reset(){
                 targetnumber = Math.floor(Math.random() * 120) + 9 ;
+				$("#winscore").text(targetnumber);
                 counter = 0;
-                win = 0;
-                lose = 0;                              
+//				$("#lost1").text("");
+//				$("#win1").text("");
             }
 
 });
