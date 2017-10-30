@@ -5,8 +5,16 @@
     <title>Crystal Collector Game</title>
     
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/game.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=YOUR_APIKEY&sensor=false">
+</script>
+    
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
+    
+<link rel="stylesheet" type="text/css" href="CSSS/style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
     
 </head>
 
@@ -16,21 +24,22 @@
 <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 
     
-<!--    Link to local file Javascript-->
-    <script type="text/javascript" src="javascript/game.js"></script>
 
 
 <div class="container">
 <!--    row 1 -->
-    <div class="row">
+    <div class="row" id="row1">
         <div class="col-6">
             <h1 class="header1">Crysal Collector</h1>
+            <div id="win1"> </div>
+            <div id="lost1"></div>
+            
         </div>
     </div>
     
 <!--    row 2-->
     
-    <div class="row">
+    <div class="row" id="row2">
         <div>
             <p id="para1">jhfkajdhfkjdhfkjshdfkjhdsfkjshdkfjshdjskfsd</p>
 
@@ -40,13 +49,13 @@
     
 <!--    Row 3-->
     <div class="row">
-        <div class="col-4">
+        <div class="col-4" id="col1">
             <div id="winscore"></div>
         </div>
 
-        <div class="col-2">
-            <div id="win"></div>
-            <div id="lose"></div>
+        <div class="col-2" id="col2">
+            <p>win: <span id = "wins"></span></p>
+            <p>lose: <span id = "lost"></span></p>
         </div>
     
     </div>
@@ -54,10 +63,14 @@
 <!--Row Button-->
     <div class="row">
         <div class="col-8">
-            <button class="buttonAll" id="button-red"></button>
-            <button class="buttonAll" id="button-blue"></button>
-            <button class="buttonAll" id="button-yellow"></button>
-            <button class="buttonAll" id="button-green"></button>
+            
+            <div id="button-red"></div>
+            <div id="button-blue"></div>
+            <div id="button-yellow"></div>
+            <div id="button-green"></div>
+
+
+
         
         </div>
         
