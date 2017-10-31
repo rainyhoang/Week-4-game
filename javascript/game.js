@@ -20,7 +20,6 @@ $(document).ready(function() {
     var numberOption = function() {
         numberRandom = Math.floor(Math.random() * 12) + 1;
         return numberRandom;
-        console.log(numberRandom)
     }
 	
 	
@@ -31,7 +30,6 @@ $(document).ready(function() {
 
 //    create value for each Crystal
         
-            var number = numberOption();  
 
         
             var imageCrystalBlue = $("<img>");
@@ -69,7 +67,6 @@ $(document).ready(function() {
 // aDD IN ON-CLICK FUNCTION
     
     $(".crystal-image").on("click", function() {
-            console.log(($(this).attr("data-crystalvalue")))
                     
             var crystalValue = ($(this).attr("data-crystalvalue"));
             crystalValue = parseInt(crystalValue);
